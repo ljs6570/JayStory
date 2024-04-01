@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.ljins.repository.BoardDao">
+    <select id="BoardList" resultType="BoardDto">
+        select * from board_info
+    </select>
+    <select id="selectBoard" parameterType="BoardDto" resultType="BoardDto">
+        select * from board_info where board_no
+    </select>
+    <insert id="" parameterType="BoardDto">
+        insert into board_info(user_no, board_title, board_content, board_date)
+        values(#{user_no}, #{board_title}, #{board_content}, #{board_date})
+    </insert>
+    <update id="update_hit" parameterType="BoardDto">
+        update board_info set board_hit=board_hit+1 where board_no=#{board_no}
+    </update>
+    <update id="updateBoard" parameterType="BoardDto">
+        update board_info set board_title=#{board_title}, board_content=#{board_content} where board_no=#{board_no}
+    </update>
+    <delete id="deleteBoard">
+        delete from board_info where board_no=#{board_no}
+    </delete>
+</mapper>

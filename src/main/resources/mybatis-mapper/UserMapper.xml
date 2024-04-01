@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.ljins.repository.UserDao">
+    <select id="UserList" resultType="UserDto">
+        select * from user_info
+    </select>
+    <select id="selectUser" parameterType="UserDto" resultType="UserDto">
+        select * from user_info where user_no=#{user_no}
+    </select>
+    <insert id="insertUser" parameterType="UserDto">
+        insert into user_info (user_id, user_pw, user_name, user_date, user_ip)
+        values(#{user_id}, #{user_pw}, #{user_name}, #{user_date}, #{user_ip})
+    </insert>
+    <delete id="deleteUser" parameterType="UserDto">
+        delete from user_info where user_no=#{user_no}
+    </delete>
+    <select id="loginUser" parameterType="UserDto" resultType="UserDto">
+        select * from user_info where user_id=#{user_id} and user_pw=#{user_pw}
+    </select>
+
+    <select id="findId" parameterType="UserDto" resultType="UserDto">
+        select * from user_info where user_name=#{user_name}
+    </select>
+
+    <select id="findPassword" parameterType="UserDto" resultType="UserDto">
+        select * from user_info where user_id=#{user_id}
+    </select>
+
+</mapper>
