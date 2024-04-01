@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 
-public class Test000 {
+public class MyTest {
 
     @Autowired
     TestDao dao;
