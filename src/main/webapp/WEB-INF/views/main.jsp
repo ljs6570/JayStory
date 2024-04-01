@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 
 	<%@ include file="../views/inc/Header.jsp"%>
-        <div>
+        <div id="main">
             <p>MAIN</p>
         </div>
 
