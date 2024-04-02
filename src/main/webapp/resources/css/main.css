@@ -1,0 +1,22 @@
+.btn:hover{
+    color:white;
+}
+
+#main_start{
+       color: black;
+       font-size: 70px;
+       text-align: center;
+       width: 360px;
+       margin: 100px auto;
+       line-height: 1.5;
+}
+
+.main_btn{
+    color: white;
+    font-weight: bold;
+    background-color: #333;
+    width: 180px;
+    height: 43px;
+    font-size: 25px;
+
+}

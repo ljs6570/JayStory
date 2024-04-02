@@ -16,6 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.css" rel="stylesheet">
 
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/inc.css"/>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main.css"/>
     <title>Title</title>
     </head>
 
@@ -24,7 +25,7 @@
         <nav class="navbar navbar-inverse">
           <div class="container-fluid">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#">JayStory</a>
+              <a class="navbar-brand" href="main">JayStory</a>
             </div>
 
           <c:choose>

@@ -2,21 +2,24 @@
 	pageEncoding="UTF-8"%>
 
 	<%@ include file="../views/inc/Header.jsp"%>
-        <div id="main">
-        <div>
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+
+    <main id="main">
+
+    <c:choose>
+        <c:when test="${login.user_no !=null}">
+
+        </c:when>
+        <c:otherwise>
+         <div id="main_start">
             <p>JayStory 시작하기<p>
         </div>
-        <div>
-            <a href="" class="btn btn-default">글쓰기</a>
+        <div class="text-center">
+            <a href="login" class="btn main_btn">글쓰기</a>
         </div>
+        </c:otherwise>
+    </c:choose>
 
-
-
-
-
-
-
-
-
-        </div>
+    </main>
     <%@ include file="../views/inc/Footer.jsp"%>

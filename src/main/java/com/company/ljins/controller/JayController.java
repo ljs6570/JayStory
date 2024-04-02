@@ -7,11 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class JayController {
 
     @GetMapping("/main")
-    public String Main(){
-        return "main";
+    public void Main(){
     }
-    @GetMapping("/write")
-    public String Write(){
-        return "write";
+    @GetMapping("/login")
+    public void Write(){
     }
 }
