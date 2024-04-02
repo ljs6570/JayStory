@@ -1,0 +1,22 @@
+#main_agree{
+text-align:center;
+margin:100px auto;
+}
+.agreeBox{
+    margin:auto;
+    width:800px;
+}
+
+.agreeBox h4{
+    text-align:left;
+    margin-left: 40px;
+    font-weight:bold;
+}
+.agreeBox textarea{
+    outline:none;
+}
+
+.agreeCheck{
+    text-align:right;
+    margin-right: 40px;
+}

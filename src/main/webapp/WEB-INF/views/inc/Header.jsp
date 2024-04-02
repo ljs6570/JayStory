@@ -17,6 +17,8 @@
 
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/inc.css"/>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main.css"/>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/login.css"/>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/sign.css"/>
     <title>Title</title>
     </head>
 
@@ -35,7 +37,7 @@
               </c:when>
               <c:otherwise>
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                  <li><a href="signAgree"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                   <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
               </c:otherwise>
