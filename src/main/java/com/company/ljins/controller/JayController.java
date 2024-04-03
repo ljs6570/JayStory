@@ -30,4 +30,43 @@ public class JayController {
     public String signUp(){
         return "main";
     }
+
+    @GetMapping("/user_delete")
+    public void user_delete(){
+
+    }
+    @PostMapping("/user_delete")
+    public String delete_user(){
+        return "main";
+    }
+    @GetMapping("/write")
+    public void write_view(){
+
+    }
+    @PostMapping("/write")
+    public String write(){
+        return "main";
+    }
+    @GetMapping("/viewDetail")
+    public void viewDetail(){
+
+    }
+    @GetMapping("/viewUpdate")
+    public void update_view(){
+
+    }
+    @PostMapping("/viewUpdate")
+    public String update(){
+        return "main";
+    }
+    @GetMapping("/viewDelete")
+    public void viewDelete(){
+
+    }
+    @PostMapping("/viewDelete")
+    public String delete_board(){
+        return "main";
+    }
+
+
 }

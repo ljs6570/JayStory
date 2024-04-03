@@ -20,6 +20,10 @@ margin:90px auto;
     text-align:right;
     margin-right: 40px;
 }
+#main_sign input{
+outline=none;
+}
+
 .main_btn{
 margin-top:1px;
 }

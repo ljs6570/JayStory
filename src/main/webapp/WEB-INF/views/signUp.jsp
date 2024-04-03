@@ -23,7 +23,7 @@
         <input type="text" id="user_name" name="user_name" placeholder="이름을 입력해주세요">
     </div>
     <div>
-        <input type="submit" value="가입하기" name="main_btn">
+        <input type="submit" value="가입하기" name="main_btn" class="btn main_btn">
     </div>
 </fieldset>
 </form>
