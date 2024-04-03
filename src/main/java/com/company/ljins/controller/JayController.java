@@ -11,7 +11,7 @@ public class JayController {
     public void Main(){
     }
     @GetMapping("/login")
-    public void write_Main(){
+    public void login_view(){
     }
     @PostMapping("/login")
     public String login(){
@@ -21,5 +21,13 @@ public class JayController {
     @GetMapping("/signAgree")
     public void signAgree(){
 
+    }
+    @GetMapping("/signUp")
+    public void signUp_view(){
+
+    }
+    @PostMapping("/signUp")
+    public String signUp(){
+        return "main";
     }
 }

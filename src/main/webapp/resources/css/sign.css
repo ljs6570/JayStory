@@ -1,6 +1,6 @@
-#main_agree{
+#main_agree, #main_sign{
 text-align:center;
-margin:100px auto;
+margin:90px auto;
 }
 .agreeBox{
     margin:auto;
@@ -9,7 +9,7 @@ margin:100px auto;
 
 .agreeBox h4{
     text-align:left;
-    margin-left: 40px;
+    margin: 12px 40px;
     font-weight:bold;
 }
 .agreeBox textarea{
@@ -19,4 +19,7 @@ margin:100px auto;
 .agreeCheck{
     text-align:right;
     margin-right: 40px;
+}
+.main_btn{
+margin-top:1px;
 }

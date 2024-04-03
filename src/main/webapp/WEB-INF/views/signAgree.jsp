@@ -85,6 +85,9 @@
                 <label for="agreeCheck2">동의합니다</label>
                 <input type="checkbox" id="agreeCheck2">
         </div>
+           <div class="text-center">
+                    <a href="signUp" class="btn main_btn">다음</a>
+           </div>
     </div>
 
 </main>
