@@ -32,13 +32,15 @@
 
           <c:choose>
               <c:when test="${login.user_no != null}" >
-                <li><a href="#">${login.user_no}</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                  <ul class="nav navbar-nav navbar-right">
+                       <li><a href="#">${login.user_no}</a></li>
+                       <li><a href="logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                  </ul>
               </c:when>
               <c:otherwise>
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="signAgree"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                  <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
               </c:otherwise>
           </c:choose>

@@ -10,8 +10,8 @@
         select * from user_info where user_no=#{user_no}
     </select>
     <insert id="insertUser" parameterType="UserDto">
-        insert into user_info (user_id, user_pw, user_name, user_date, user_ip)
-        values(#{user_id}, #{user_pw}, #{user_name}, #{user_date}, #{user_ip})
+        insert into user_info (user_id, user_pw, user_name, user_ip)
+        values(#{user_id}, #{user_pw}, #{user_name}, #{user_ip})
     </insert>
     <delete id="deleteUser" parameterType="UserDto">
         delete from user_info where user_no=#{user_no}

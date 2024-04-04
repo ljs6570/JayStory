@@ -9,7 +9,7 @@
 
     <c:choose>
         <c:when test="${login.user_no !=null}">
-
+            ${login.user_no};
         </c:when>
         <c:otherwise>
          <div id="main_start">

@@ -7,10 +7,10 @@
     <form action="login" method="post" id="login">
     <fieldset>
         <div class="form-group">
-           <input type="text" id="userId" name="userEmail" placeholder="아이디를 입력하세요" >
+           <input type="text" id="user_id" name="user_id" placeholder="아이디를 입력하세요" >
         </div>
         <div class="form-group">
-            <input type="password" id="userpw" name="userPass" placeholder="비밀번호를 입력하세요">
+            <input type="password" id="user_pw" name="user_pw" placeholder="비밀번호를 입력하세요">
        </div>
        <div class="form-group">
        <input type="submit" class="btn login_btn" value="로그인">

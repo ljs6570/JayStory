@@ -1,5 +1,12 @@
 package com.company.ljins.domain;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class BoardDto {
     private int board_no;
     private String board_title;
