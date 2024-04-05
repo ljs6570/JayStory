@@ -1,8 +1,11 @@
 package com.company.ljins.test;
 
+import com.company.ljins.domain.BoardDto;
 import com.company.ljins.domain.UserDto;
+import com.company.ljins.repository.BoardDao;
 import com.company.ljins.repository.TestDao;
 import com.company.ljins.repository.UserDao;
+import com.company.ljins.service.BoardService;
 import com.company.ljins.service.UserService;
 import org.apache.catalina.User;
 import org.junit.jupiter.api.Disabled;
@@ -18,12 +21,14 @@ public class MyTest {
     UserService service;
     @Autowired
     UserDao dao;
+    @Autowired
+    BoardService bservice;
     @Test @Disabled
     public void Test01(){
       // int i=dao.countList();
      //   System.out.println("@@@@"+i);
     }
-    @Test //@Disabled
+    @Test @Disabled
     public void Test02(){
         UserDto dto=new UserDto();
         dto.setUser_id("test3@email.com");
@@ -39,5 +44,20 @@ public class MyTest {
     public void Test03(){
         UserDto dto= new UserDto();
         System.out.print("list@@@@@ :"+service.ListAll());
+    }
+
+    @Test @Disabled
+    public void Board01(){
+        BoardDto dto = new BoardDto();
+        dto.setUser_no(1);
+        dto.setBoard_title("firstTest");
+        dto.setBoard_content("testContent");
+        bservice.insertBoard(dto);
+        System.out.println(bservice.BoardList(1));
+
+    }
+    @Test
+    public void Board02(){
+        System.out.println(bservice.BoardList(1));
     }
 }

@@ -6,7 +6,6 @@
           <address>Contact for more information. seung6570@naver.com</address>
       </footer>
 
-
     </body>
 
 </html>

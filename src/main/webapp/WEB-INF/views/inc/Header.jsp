@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main.css"/>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/login.css"/>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/sign.css"/>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/board.css"/>
     <title>Title</title>
     </head>
 

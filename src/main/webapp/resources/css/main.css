@@ -18,5 +18,9 @@
     width: 180px;
     height: 43px;
     font-size: 25px;
+}
 
+#main_login{
+     margin:100px auto;
+    width : 800px;
 }
