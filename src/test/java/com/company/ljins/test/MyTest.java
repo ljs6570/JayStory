@@ -2,12 +2,9 @@ package com.company.ljins.test;
 
 import com.company.ljins.domain.BoardDto;
 import com.company.ljins.domain.UserDto;
-import com.company.ljins.repository.BoardDao;
-import com.company.ljins.repository.TestDao;
 import com.company.ljins.repository.UserDao;
 import com.company.ljins.service.BoardService;
 import com.company.ljins.service.UserService;
-import org.apache.catalina.User;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +16,7 @@ public class MyTest {
 
     @Autowired
     UserService service;
-    @Autowired
-    UserDao dao;
+
     @Autowired
     BoardService bservice;
     @Test @Disabled
@@ -42,7 +38,7 @@ public class MyTest {
 
     @Test @Disabled
     public void Test03(){
-        UserDto dto= new UserDto();
+
         System.out.print("list@@@@@ :"+service.ListAll());
     }
 

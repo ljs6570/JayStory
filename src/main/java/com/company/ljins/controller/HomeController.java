@@ -11,11 +11,6 @@ public class HomeController {
     @Autowired
     TestDao dao;
 
-    @GetMapping("/home")
-    public String home(Model model) {
-        model.addAttribute("count", dao.countList());
-        return "home";
-    }
 
     @GetMapping("/test")
     public String test(Model model) {

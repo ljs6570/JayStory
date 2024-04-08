@@ -25,14 +25,15 @@ public class JayController {
     @Autowired
     BoardService boardService;
 
-    @GetMapping("/main")
-    public void Main(HttpSession session, Model model) {
+    @GetMapping("/home")
+    public String Main(HttpSession session, Model model) {
         if (session.getAttribute("login") != null) {
             UserDto dto = (UserDto) session.getAttribute("login");
             int user_no = dto.getUser_no();
 
             model.addAttribute("list", boardService.BoardList(user_no));
         }
+        return "main";
     }
 
     @GetMapping("/login")
@@ -48,7 +49,7 @@ public class JayController {
         UserDto userinfo = userService.loginUser(dto);
         if (userinfo != null) {
             session.setAttribute("login", userinfo);
-            return "redirect:/main";
+            return "redirect:/home";
         } else {
             print.println("<script>alert('아이디 또는 비밀번호가 맞지않습니다')</script>");
             print.flush();
@@ -59,7 +60,7 @@ public class JayController {
     @GetMapping("/logout")
     public String logout(HttpSession session) {
         session.invalidate();
-        return "/main";
+        return "/home";
     }
 
     @GetMapping("/signAgree")
@@ -75,7 +76,7 @@ public class JayController {
     @PostMapping("/signUp")
     public String signUp(UserDto dto) {
         userService.insertUser(dto);
-        return "main";
+        return "/home";
     }
 
     @GetMapping("/user_delete")
@@ -85,7 +86,7 @@ public class JayController {
 
     @PostMapping("/user_delete")
     public String delete_user() {
-        return "main";
+        return "/home";
     }
 
     @GetMapping("/write")
@@ -96,7 +97,7 @@ public class JayController {
     @PostMapping("/write")
     public String write(BoardDto dto) {
         boardService.insertBoard(dto);
-        return "main";
+        return "redirect:/home";
     }
 
     @GetMapping("/viewDetail")
@@ -111,7 +112,7 @@ public class JayController {
 
     @PostMapping("/viewUpdate")
     public String update() {
-        return "main";
+        return "/home";
     }
 
     @GetMapping("/viewDelete")
@@ -121,7 +122,7 @@ public class JayController {
 
     @PostMapping("/viewDelete")
     public String delete_board() {
-        return "main";
+        return "/home";
     }
 
 
