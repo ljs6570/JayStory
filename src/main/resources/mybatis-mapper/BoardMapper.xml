@@ -7,7 +7,7 @@
         select * from board_info
     </select>
     <select id="selectBoard" parameterType="BoardDto" resultType="BoardDto">
-        select * from board_info where board_no
+        select * from board_info where board_no=#{board_no}
     </select>
     <insert id="insertBoard" parameterType="BoardDto">
         insert into board_info(user_no, board_title, board_content)

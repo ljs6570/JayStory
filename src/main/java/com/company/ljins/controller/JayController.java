@@ -101,7 +101,9 @@ public class JayController {
     }
 
     @GetMapping("/viewDetail")
-    public void viewDetail() {
+    public void viewDetail(BoardDto dto, Model model) {
+        int board_no=dto.getBoard_no();
+        model.addAttribute("select", boardService.detail_view(board_no));
 
     }
 

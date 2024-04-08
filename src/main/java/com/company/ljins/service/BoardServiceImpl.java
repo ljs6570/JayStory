@@ -19,9 +19,9 @@ public class BoardServiceImpl implements BoardService{
     }
 
     @Override
-    public BoardDto detail_view(BoardDto dto) {
-        dao.update_hit(dto);
-        return dao.selectBoard(dto);
+    public BoardDto detail_view(int board_no) {
+        dao.update_hit(board_no);
+        return dao.selectBoard(board_no);
     }
 
     @Override

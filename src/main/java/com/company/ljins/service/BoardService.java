@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface BoardService {
     public List<BoardDto> BoardList(int user_no);
-    public BoardDto detail_view(BoardDto dto);
+    public BoardDto detail_view(int board_no);
     public BoardDto update_view(BoardDto dto);
     public int insertBoard(BoardDto dto);
     public int updateBoard(BoardDto dto);

@@ -8,9 +8,9 @@ import java.util.List;
 @Repository
 public interface BoardDao {
     public List<BoardDto> BoardList(int user_no);
-    public BoardDto selectBoard(BoardDto dto);
+    public BoardDto selectBoard(int board_no);
     public int insertBoard(BoardDto dto);
-    public int update_hit(BoardDto dto);
+    public int update_hit(int board_no);
     public int updateBoard(BoardDto dto);
     public int deleteBoard(BoardDto dto);
 }
